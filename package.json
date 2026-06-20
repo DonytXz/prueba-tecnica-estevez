@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:unit": "vitest",
+    "test:e2e": "npx playwright test",
     "test:unit:watch": "vitest --watch",
     "serve:ssr:prueba-tecnica-estevez": "node dist/prueba-tecnica-estevez/server/server.mjs"
   },
@@ -34,6 +35,7 @@
     "@angular/cli": "^21.2.16",
     "@angular/compiler": "^21.2.17",
     "@angular/compiler-cli": "^21.2.0",
+    "@playwright/test": "^1.61.0",
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
     "jsdom": "^28.0.0",

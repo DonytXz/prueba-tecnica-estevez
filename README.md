@@ -20,6 +20,22 @@ Una aplicación moderna en Angular construida para gestionar datos de clientes, 
    `ng serve`
 5. Abre tu navegador y dirígete a `http://localhost:4200/`
 
+## 🧪 Pruebas de End-to-End (E2E)
+
+Este proyecto utiliza **Playwright** para la automatización de pruebas E2E. Gracias a la configuración de `webServer`, no necesitas iniciar el servidor manualmente; Playwright se encargará de levantar la aplicación en `localhost:4200` automáticamente durante la ejecución.
+
+### Comandos disponibles
+
+#### 1. Ejecutar todas las pruebas (Modo rápido)
+Ideal para verificar que todo el sistema funciona correctamente antes de hacer un *commit* o *push*. Ejecuta las pruebas en segundo plano (headless).
+`npx playwright test`
+Tabien se puede usar el siguiente para mostrar la UI
+`npx playwright test --ui`
+
+#### 2. Ver la interaccion con el navegador (Modo lento)
+Para el flujo de login use el siguiente comando
+`playwright test e2e/login.spec.ts --headed`
+
 ## 🔐 Credenciales de Acceso
 Para acceder al dashboard, utiliza el API en vivo de DummyJSON con estas credenciales:
 * **Usuario:** emilys
