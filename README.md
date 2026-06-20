@@ -1,9 +1,3 @@
-# PruebaTecnicaEstevez
-¡Tienes toda la razón! Un error de mi parte no haber considerado el idioma para la entrega final.
-
-Aquí tienes la traducción del archivo README.md con un tono profesional, técnico y perfectamente adaptado para que los revisores en México lo lean de forma natural.
-
-Markdown
 # Dashboard de Gestión de Clientes - Prueba Técnica
 
 Una aplicación moderna en Angular construida para gestionar datos de clientes, demostrando el manejo del estado, enrutamiento y diseño de interfaz de usuario utilizando las características más recientes del framework.
@@ -17,9 +11,9 @@ Una aplicación moderna en Angular construida para gestionar datos de clientes, 
 ## ⚙️ Cómo Ejecutar el Proyecto
 
 1. Clona este repositorio:
-   `git clone <tu-url-del-repositorio>`
+   `git clone https://github.com/DonytXz/prueba-tecnica-estevez.git`
 2. Navega al directorio del proyecto:
-   `cd angular-client-app`
+   `cd prueba-tecnica-estevez`
 3. Instala las dependencias:
    `npm install`
 4. Inicia el servidor de desarrollo:
