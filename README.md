@@ -20,6 +20,16 @@ Una aplicación moderna en Angular construida para gestionar datos de clientes, 
    `ng serve`
 5. Abre tu navegador y dirígete a `http://localhost:4200/`
 
+## 🛠 Pruebas Unitarias (Unit Testing)
+
+Este proyecto utiliza **Vitest** como framework de pruebas. Fue seleccionado por su increíble velocidad, su configuración nativa con Vite y su integración perfecta con los módulos modernos de Angular.
+
+### Comandos disponibles
+
+#### 1. Ejecutar pruebas una sola vez
+Ideal para CI/CD o para verificar que todo el código actual pase las pruebas antes de subir cambios a producción.
+`npm test:unit`
+
 ## 🧪 Pruebas de End-to-End (E2E)
 
 Este proyecto utiliza **Playwright** para la automatización de pruebas E2E. Gracias a la configuración de `webServer`, no necesitas iniciar el servidor manualmente; Playwright se encargará de levantar la aplicación en `localhost:4200` automáticamente durante la ejecución.
