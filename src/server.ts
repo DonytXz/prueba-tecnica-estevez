@@ -5,9 +5,11 @@ import {
   writeResponseToNodeResponse,
 } from '@angular/ssr/node';
 import express from 'express';
+import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 
 const browserDistFolder = join(import.meta.dirname, '../browser');
+const browserIndexPath = join(browserDistFolder, 'index.html');
 
 const app = express();
 const angularApp = new AngularNodeAppEngine();
@@ -41,9 +43,17 @@ app.use(
 app.use((req, res, next) => {
   angularApp
     .handle(req)
-    .then((response) =>
-      response ? writeResponseToNodeResponse(response, res) : next(),
-    )
+    .then((response) => {
+      if (response) {
+        return writeResponseToNodeResponse(response, res);
+      }
+
+      if (existsSync(browserIndexPath)) {
+        return res.sendFile(browserIndexPath);
+      }
+
+      res.status(404).send('Not Found');
+    })
     .catch(next);
 });
 

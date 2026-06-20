@@ -1,0 +1,45 @@
+<h2 mat-dialog-title class="title">{{ data ? 'Editar' : 'Agregar' }} Cliente</h2>
+
+<mat-dialog-content>
+  <form [formGroup]="clientForm" class="form-container">
+    <mat-form-field appearance="outline">
+      <mat-label>Nombre</mat-label>
+      <input matInput placeholder="Ingrese el nombre" formControlName="name">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Correo electrónico</mat-label>
+      <input matInput type="email" placeholder="ejemplo@correo.com" formControlName="email">
+      <mat-error *ngIf="clientForm.get('email')?.hasError('required')">El correo es obligatorio.</mat-error>
+      <mat-error *ngIf="clientForm.get('email')?.hasError('email')">Ingrese un correo válido.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>País</mat-label>
+      <mat-select formControlName="country">
+        <mat-option value="MX">México (+52)</mat-option>
+        <mat-option value="US">Estados Unidos (+1)</mat-option>
+        <mat-option value="ES">España (+34)</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Teléfono</mat-label>
+      <input matInput placeholder="6000000000" formControlName="phone">
+      <mat-error *ngIf="clientForm.get('phone')?.hasError('required')">El teléfono es obligatorio.</mat-error>
+      <mat-error *ngIf="clientForm.get('phone')?.hasError('pattern')">Ingrese un número de 10 dígitos.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Empresa</mat-label>
+      <input matInput placeholder="Nombre de la empresa" formControlName="company">
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">Cancelar</button>
+  <button mat-raised-button color="primary" [disabled]="!clientForm.valid || !clientForm.dirty" (click)="onSave()">
+    Guardar
+  </button>
+</mat-dialog-actions>

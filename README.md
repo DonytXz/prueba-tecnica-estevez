@@ -1,4 +1,46 @@
 # PruebaTecnicaEstevez
+¡Tienes toda la razón! Un error de mi parte no haber considerado el idioma para la entrega final.
+
+Aquí tienes la traducción del archivo README.md con un tono profesional, técnico y perfectamente adaptado para que los revisores en México lo lean de forma natural.
+
+Markdown
+# Dashboard de Gestión de Clientes - Prueba Técnica
+
+Una aplicación moderna en Angular construida para gestionar datos de clientes, demostrando el manejo del estado, enrutamiento y diseño de interfaz de usuario utilizando las características más recientes del framework.
+
+## 🚀 Tecnologías Utilizadas
+* **Angular 21**: Aprovechando los Componentes Standalone (Independientes) y el nuevo flujo de control `@if`.
+* **Angular Signals**: Utilizado para el manejo del estado reactivo e inmutable en el `ClientService` y `AuthService` sin necesidad del código repetitivo (boilerplate) de RxJS.
+* **Angular Material**: Para una interfaz de usuario responsiva, accesible y visualmente pulida.
+* **Formularios Reactivos (Reactive Forms)**: Implementando validación estricta para los procesos de inicio de sesión y creación de clientes.
+
+## ⚙️ Cómo Ejecutar el Proyecto
+
+1. Clona este repositorio:
+   `git clone <tu-url-del-repositorio>`
+2. Navega al directorio del proyecto:
+   `cd angular-client-app`
+3. Instala las dependencias:
+   `npm install`
+4. Inicia el servidor de desarrollo:
+   `ng serve`
+5. Abre tu navegador y dirígete a `http://localhost:4200/`
+
+## 🔐 Credenciales de Acceso
+Para acceder al dashboard, utiliza el API en vivo de DummyJSON con estas credenciales:
+* **Usuario:** emilys
+* **Contraseña:** emilyspass
+
+## ✨ Características Implementadas
+* **Autenticación:** Sistema de inicio de sesión simulado protegido por un `AuthGuard` funcional.
+* **Operaciones CRUD:** Funcionalidad completa para Crear, Leer, Actualizar y Eliminar clientes.
+* **Inmutabilidad:** El estado se maneja puramente a través de Signals, asegurando que las actualizaciones de la interfaz sean síncronas, rápidas y predecibles.
+
+## 🔮 Futuras Mejoras (En caso de escalar a producción)
+* Integración con una API REST real utilizando `HttpClient`.
+* Manejo centralizado de errores a través de Interceptores HTTP (HTTP Interceptors).
+* Configuración de pruebas unitarias con Vitest o Jasmine/Karma.
+* Pruebas E2E con Playwright o Cypress
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.16.
 
