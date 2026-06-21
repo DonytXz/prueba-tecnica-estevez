@@ -7,6 +7,10 @@ Una aplicación moderna en Angular construida para gestionar datos de clientes, 
 * **Angular Signals**: Utilizado para el manejo del estado reactivo e inmutable en el `ClientService` y `AuthService` sin necesidad del código repetitivo (boilerplate) de RxJS.
 * **Angular Material**: Para una interfaz de usuario responsiva, accesible y visualmente pulida.
 * **Formularios Reactivos (Reactive Forms)**: Implementando validación estricta para los procesos de inicio de sesión y creación de clientes.
+  
+## 🚀 Demo en vivo
+Puedes ver el proyecto desplegado y funcionando aquí:
+👉 [https://donytxz.github.io/prueba-tecnica-estevez/](https://donytxz.github.io/prueba-tecnica-estevez/)
 
 ## ⚙️ Cómo Ejecutar el Proyecto
 
