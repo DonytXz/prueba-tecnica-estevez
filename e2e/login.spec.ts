@@ -4,7 +4,7 @@ test.describe('Login Page', () => {
 
   test.beforeEach(async ({ page }) => {
     // Navigate to the login page before each test
-    await page.goto('/login');
+    await page.goto('login');
   });
 
   test('should disable the submit button when fields are empty', async ({ page }) => {
