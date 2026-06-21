@@ -28,7 +28,7 @@ Este proyecto utiliza **Vitest** como framework de pruebas. Fue seleccionado por
 
 #### 1. Ejecutar pruebas una sola vez
 Ideal para CI/CD o para verificar que todo el código actual pase las pruebas antes de subir cambios a producción.
-`npm test:unit`
+`npm run test:unit`
 
 ## 🧪 Pruebas de End-to-End (E2E)
 
