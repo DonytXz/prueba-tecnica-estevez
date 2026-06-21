@@ -1,10 +1,18 @@
+:host {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+}
+
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  width: 100%;
+  min-height: 100%;
   background-color: var(--estevez-bg);
   padding: 1rem;
+  box-sizing: border-box;
 }
 
 .login-card {
